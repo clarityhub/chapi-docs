@@ -1,0 +1,1 @@
+export const WEBSITE_MAX_WIDTH = 1024;

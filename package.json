@@ -1,0 +1,67 @@
+{
+  "name": "clarityhub-docs",
+  "private": true,
+  "description": "Documentation site for Clarity Hub API",
+  "version": "0.1.0",
+  "license": "UNLICENSED",
+  "scripts": {
+    "lint": "eslint src",
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "start": "npm run develop -- --host=0.0.0.0",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && CI=true npm test",
+      "pre-push": "npm run lint && CI=true npm test"
+    }
+  },
+  "dependencies": {
+    "@clarityhub/unity-marketing": "^1.3.0",
+    "@clarityhub/unity-web": "^1.4.1",
+    "@emotion/core": "^10.0.7",
+    "@emotion/styled": "^10.0.7",
+    "@raae/gatsby-remark-oembed": "0.0.7",
+    "@weknow/gatsby-remark-twitter": "^0.2.1",
+    "gatsby": "^2.13.39",
+    "gatsby-paginate": "^1.1.0",
+    "gatsby-plugin-feed": "^2.3.5",
+    "gatsby-plugin-google-analytics": "^2.1.4",
+    "gatsby-plugin-manifest": "^2.2.4",
+    "gatsby-plugin-offline": "^2.2.4",
+    "gatsby-plugin-react-helmet": "^3.1.2",
+    "gatsby-plugin-sharp": "^2.2.9",
+    "gatsby-plugin-typography": "^2.3.2",
+    "gatsby-remark-images": "^3.1.7",
+    "gatsby-remark-prismjs": "^3.3.3",
+    "gatsby-remark-responsive-iframe": "^2.2.4",
+    "gatsby-source-filesystem": "^2.1.6",
+    "gatsby-transformer-remark": "^2.6.9",
+    "gatsby-transformer-sharp": "^2.2.4",
+    "mobx": "^4.11.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-helmet": "^5.2.1",
+    "redoc": "^2.0.0-rc.8-1",
+    "rehype-react": "^4.0.1",
+    "reset-css": "^4.0.1",
+    "slugify": "^1.3.4",
+    "styled-components": "^4.3.2"
+  },
+  "devDependencies": {
+    "eslint": "^6.1.0",
+    "eslint-config-clarity-hub": "^2.0.2",
+    "husky": "^3.0.3",
+    "prettier": "^1.18.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  }
+}

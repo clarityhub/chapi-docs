@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+} 
+
+body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+
+    font-size: 16px;
+}
+
+code {
+    font-size: 1rem;
+}
+
+.gatsby-highlight {
+    margin: 2rem 0;
+}
